@@ -1,0 +1,7 @@
+[Cursor] Fix UI styling issues
+
+- Simplified layout and removed complex styling
+- Switched to Inter font for better compatibility
+- Removed SVG icons that were causing display issues
+- Added Lifebook categories section to homepage
+- Improved button styling and overall readability 
