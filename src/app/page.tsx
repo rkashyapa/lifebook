@@ -1,96 +1,108 @@
 export default function Home() {
   return (
-    <div className="max-w-5xl mx-auto">
-      {/* Welcome Section */}
-      <section className="mb-8 p-6 bg-white rounded-lg border border-gray-200">
-        <h1 className="text-2xl font-bold mb-3 text-gray-800">Welcome to LifeBook</h1>
-        <p className="text-gray-700">
-          Your personal CRM and goal management system based on the Lifebook framework.
-          Track your contacts, set goals across 12 life categories, and get AI-powered insights.
-        </p>
+    <div className="space-y-10">
+      {/* Hero Section */}
+      <section className="glass-card p-8 relative overflow-hidden">
+        <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary opacity-10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-accent opacity-10 rounded-full blur-3xl"></div>
+        <div className="relative z-10">
+          <h1 className="text-3xl font-bold mb-4 bg-gradient-to-r from-primary-dark to-accent-dark bg-clip-text text-transparent">
+            Welcome to LifeBook
+          </h1>
+          <p className="text-lg max-w-3xl">
+            Your personal CRM and goal management system based on the Lifebook framework.
+            Track your contacts, set goals across 12 life categories, and get AI-powered insights.
+          </p>
+        </div>
       </section>
 
       {/* Main Features */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        <div className="p-6 bg-white rounded-lg border border-gray-200">
-          <h2 className="text-xl font-bold mb-3 text-gray-800">Contact Management</h2>
-          <p className="text-gray-700 mb-4">
-            Organize your personal and professional contacts with detailed profiles, tags, and interaction tracking.
-          </p>
-          <a href="/contacts" className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-            Manage Contacts
-          </a>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section className="glass-card p-8 relative overflow-hidden">
+          <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-primary opacity-10 rounded-full blur-3xl"></div>
+          <div className="relative z-10">
+            <h2 className="text-2xl font-bold mb-4 text-primary-dark">Contact Management</h2>
+            <p className="mb-6 text-gray-700">
+              Organize your personal and professional contacts with detailed profiles, tags, and interaction tracking.
+            </p>
+            <a href="/contacts" className="glass-button inline-block text-primary-dark">
+              Manage Contacts
+            </a>
+          </div>
+        </section>
 
-        <div className="p-6 bg-white rounded-lg border border-gray-200">
-          <h2 className="text-xl font-bold mb-3 text-gray-800">Goal Tracking</h2>
-          <p className="text-gray-700 mb-4">
-            Set and track goals across the 12 Lifebook categories with progress visualization and reminders.
-          </p>
-          <a href="/goals" className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-            Manage Goals
-          </a>
-        </div>
+        <section className="glass-card p-8 relative overflow-hidden">
+          <div className="absolute -top-16 -left-16 w-48 h-48 bg-accent opacity-10 rounded-full blur-3xl"></div>
+          <div className="relative z-10">
+            <h2 className="text-2xl font-bold mb-4 text-primary-dark">Goal Tracking</h2>
+            <p className="mb-6 text-gray-700">
+              Set and track goals across the 12 Lifebook categories with progress visualization and reminders.
+            </p>
+            <a href="/goals" className="glass-button inline-block text-primary-dark">
+              Manage Goals
+            </a>
+          </div>
+        </section>
       </div>
 
       {/* Quick Actions */}
-      <section className="p-6 bg-white rounded-lg border border-gray-200 mb-8">
-        <h2 className="text-xl font-bold mb-4 text-gray-800">Quick Actions</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <a href="/contacts/new" className="p-4 bg-gray-50 hover:bg-gray-100 rounded border border-gray-200 text-center">
-            <span className="block text-blue-600 font-medium">Add Contact</span>
+      <section className="glass-card p-8">
+        <h2 className="text-2xl font-bold mb-6 text-primary-dark">Quick Actions</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <a href="/contacts/new" className="glass-card p-5 text-center hover:scale-105">
+            <span className="block text-primary-dark font-medium">Add Contact</span>
           </a>
-          <a href="/goals/new" className="p-4 bg-gray-50 hover:bg-gray-100 rounded border border-gray-200 text-center">
-            <span className="block text-blue-600 font-medium">Create Goal</span>
+          <a href="/goals/new" className="glass-card p-5 text-center hover:scale-105">
+            <span className="block text-primary-dark font-medium">Create Goal</span>
           </a>
-          <a href="/insights" className="p-4 bg-gray-50 hover:bg-gray-100 rounded border border-gray-200 text-center">
-            <span className="block text-blue-600 font-medium">View Insights</span>
+          <a href="/insights" className="glass-card p-5 text-center hover:scale-105">
+            <span className="block text-primary-dark font-medium">View Insights</span>
           </a>
-          <a href="/settings" className="p-4 bg-gray-50 hover:bg-gray-100 rounded border border-gray-200 text-center">
-            <span className="block text-blue-600 font-medium">Settings</span>
+          <a href="/settings" className="glass-card p-5 text-center hover:scale-105">
+            <span className="block text-primary-dark font-medium">Settings</span>
           </a>
         </div>
       </section>
 
       {/* Categories Preview */}
-      <section className="p-6 bg-white rounded-lg border border-gray-200">
-        <h2 className="text-xl font-bold mb-4 text-gray-800">Lifebook Categories</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Health & Fitness</span>
+      <section className="glass-card p-8">
+        <h2 className="text-2xl font-bold mb-6 text-primary-dark">Lifebook Categories</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Health & Fitness</span>
           </div>
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Intellectual Life</span>
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Intellectual Life</span>
           </div>
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Emotional Life</span>
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Emotional Life</span>
           </div>
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Character</span>
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Character</span>
           </div>
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Spiritual Life</span>
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Spiritual Life</span>
           </div>
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Love Relationships</span>
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Love Relationships</span>
           </div>
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Parenting</span>
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Parenting</span>
           </div>
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Social Life</span>
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Social Life</span>
           </div>
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Financial</span>
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Financial</span>
           </div>
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Career</span>
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Career</span>
           </div>
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Quality of Life</span>
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Quality of Life</span>
           </div>
-          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-            <span className="text-gray-700 text-sm">Life Vision</span>
+          <div className="glass-card p-4 text-center hover:scale-105">
+            <span className="text-primary-dark">Life Vision</span>
           </div>
         </div>
       </section>
