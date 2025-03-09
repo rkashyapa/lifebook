@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body suppressHydrationWarning className={`${inter.variable} font-sans`}>
         <header className="sticky top-0 z-10 mb-8">
-          <div className="bg-white/60 backdrop-blur-md border border-white/80 shadow-md rounded-lg mx-auto my-4 max-w-7xl px-6 py-3">
+          <div className="bg-white bg-opacity-60 backdrop-blur-md border border-white shadow-md rounded-lg mx-auto my-4 max-w-7xl px-6 py-3">
             <div className="flex items-center justify-between">
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent">
                 LifeBook
@@ -42,7 +42,7 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="mt-auto py-6">
-          <div className="bg-white/60 backdrop-blur-md border border-white/80 shadow-md rounded-lg max-w-7xl mx-auto px-6 py-4 text-center">
+          <div className="bg-white bg-opacity-60 backdrop-blur-md border border-white shadow-md rounded-lg max-w-7xl mx-auto px-6 py-4 text-center">
             <p suppressHydrationWarning className="text-sm text-primary-dark">
               © 2025 LifeBook - Personal CRM & Goal Management
             </p>
