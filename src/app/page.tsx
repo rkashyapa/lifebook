@@ -56,24 +56,42 @@ export default function Home() {
       <section className="p-6 bg-white rounded-lg border border-gray-200">
         <h2 className="text-xl font-bold mb-4 text-gray-800">Lifebook Categories</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-          {[
-            "Health & Fitness",
-            "Intellectual Life",
-            "Emotional Life",
-            "Character",
-            "Spiritual Life",
-            "Love Relationships",
-            "Parenting",
-            "Social Life",
-            "Financial",
-            "Career",
-            "Quality of Life",
-            "Life Vision"
-          ].map((category) => (
-            <div key={category} className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
-              <span className="text-gray-700 text-sm">{category}</span>
-            </div>
-          ))}
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Health & Fitness</span>
+          </div>
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Intellectual Life</span>
+          </div>
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Emotional Life</span>
+          </div>
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Character</span>
+          </div>
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Spiritual Life</span>
+          </div>
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Love Relationships</span>
+          </div>
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Parenting</span>
+          </div>
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Social Life</span>
+          </div>
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Financial</span>
+          </div>
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Career</span>
+          </div>
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Quality of Life</span>
+          </div>
+          <div className="p-3 bg-gray-50 rounded border border-gray-200 text-center">
+            <span className="text-gray-700 text-sm">Life Vision</span>
+          </div>
         </div>
       </section>
     </div>

@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans bg-gray-50`}>
+      <body suppressHydrationWarning className={`${inter.variable} font-sans bg-gray-50`}>
         <header className="bg-white border-b">
           <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
             <h1 className="text-xl font-bold text-gray-800">LifeBook</h1>
@@ -39,7 +39,7 @@ export default function RootLayout({
         </main>
         <footer className="bg-white border-t">
           <div className="max-w-5xl mx-auto px-4 py-4 text-center text-gray-500 text-sm">
-            <p>© {new Date().getFullYear()} LifeBook - Personal CRM & Goal Management</p>
+            <p suppressHydrationWarning>© 2025 LifeBook - Personal CRM & Goal Management</p>
           </div>
         </footer>
       </body>
