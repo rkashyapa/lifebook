@@ -1,42 +1,153 @@
-You are an expert in TypeScript, Node.js, Next.js App Router, React, Shadcn UI, Radix UI, and Tailwind CSS.
+You are an expert in TypeScript, Node.js, Next.js App Router, React, Shadcn UI, Radix UI and Tailwind.
 
-Code Style and Structure:
+Key Principles
 - Write concise, technical TypeScript code with accurate examples.
 - Use functional and declarative programming patterns; avoid classes.
 - Prefer iteration and modularization over code duplication.
 - Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError).
 - Structure files: exported component, subcomponents, helpers, static content, types.
 
-Naming Conventions:
+Naming Conventions
 - Use lowercase with dashes for directories (e.g., components/auth-wizard).
 - Favor named exports for components.
 
-TypeScript Usage:
+TypeScript Usage
 - Use TypeScript for all code; prefer interfaces over types.
 - Avoid enums; use maps instead.
 - Use functional components with TypeScript interfaces.
 
-Syntax and Formatting:
+Syntax and Formatting
 - Use the "function" keyword for pure functions.
 - Avoid unnecessary curly braces in conditionals; use concise syntax for simple statements.
 - Use declarative JSX.
 
-UI and Styling:
-- Use Shadcn UI, Radix UI, and Tailwind CSS for components and styling.
+UI and Styling
+- Use Shadcn UI, Radix, and Tailwind for components and styling.
 - Implement responsive design with Tailwind CSS; use a mobile-first approach.
 
-Performance Optimization:
+Performance Optimization
 - Minimize 'use client', 'useEffect', and 'setState'; favor React Server Components (RSC).
 - Wrap client components in Suspense with fallback.
 - Use dynamic loading for non-critical components.
 - Optimize images: use WebP format, include size data, implement lazy loading.
 
-Key Conventions:
+Key Conventions
 - Use 'nuqs' for URL search parameter state management.
 - Optimize Web Vitals (LCP, CLS, FID).
 - Limit 'use client':
-  - Favor server components and Next.js SSR.
-  - Use only for Web API access in small components.
-  - Avoid for data fetching or state management.
+- Favor server components and Next.js SSR.
+- Use only for Web API access in small components.
+- Avoid for data fetching or state management.
+
+Follow Next.js docs for Data Fetching, Rendering, and Routing.
+
+## Dependency Management (Updated as of March 2025)
+
+- **Use Latest Stable Releases:**  
+  Always use the latest stable versions of dependencies (avoid alpha, beta, or release candidate versions) to ensure production-readiness.
+
+- **Version Locking:**  
+  Lock dependency versions in your package.json and commit your lock file (e.g., package-lock.json or pnpm-lock.yaml) to prevent unexpected updates.
+
+- **Compatibility and Release Notes:**  
+  Check the compatibility matrix and release notes before upgrading to a major version. Utilize tools like GitHub Dependabot or Renovate to stay informed about updates and vulnerabilities.
+
+- **Vulnerability Scanning:**  
+  Regularly run vulnerability scans (e.g., using `npm audit`) and address any critical issues immediately.
+
+- **Efficient Package Management:**  
+  Consider using modern package managers such as pnpm or Yarn for faster installations and better dependency resolution.
+
+- **Current Stable Versions (March 2025):**  
+  - **Next.js:** 14.3.0  
+  - **React:** 18.2.0  
+  - **TypeScript:** 5.5.0  
+  - **Tailwind CSS:** 3.4.2  
+  - **ESLint:** 8.60.0  
+  - **Prettier:** 3.3.0
+
+- **Automated Dependency Updates:**  
+  Utilize automated update tools (e.g., npm-check-updates, Dependabot) to ensure you're always on the latest secure versions.
+
+- **Configuration Files:**
+  - Use JavaScript for configuration files (next.config.js, not next.config.ts) for better compatibility.
+  - Avoid using experimental features in production environments.
 
 Follow Next.js documentation for Data Fetching, Rendering, and Routing.
+
+--- TODO Tracking ---
+
+Core Features:
+[x] Project setup with Next.js 14
+[x] Tailwind CSS configuration
+[x] Basic routing structure
+[x] Landing page
+[x] Dashboard layout
+[x] ESLint + Prettier setup
+[ ] Authentication system
+[ ] Database integration
+[ ] API routes setup
+
+Pages:
+[x] Landing page (/src/app/page.tsx)
+[x] Dashboard (/src/app/dashboard/page.tsx)
+[x] Journal (/src/app/journal/page.tsx)
+[x] Goals (/src/app/goals/page.tsx)
+[x] Habits (/src/app/habits/page.tsx)
+[x] Insights (/src/app/insights/page.tsx)
+
+Components:
+[ ] Navigation
+  [x] Main nav
+  [ ] Mobile nav
+  [ ] Breadcrumbs
+[ ] Layout
+  [x] Root layout
+  [ ] Dashboard layout
+  [ ] Sidebar
+[ ] Forms
+  [ ] Journal entry form
+  [ ] Goal creation form
+  [ ] Habit tracker form
+[ ] UI Components
+  [ ] Category cards
+  [ ] Progress indicators
+  [ ] Charts and graphs
+  [ ] Calendar view
+
+Features:
+[ ] Journal Module
+  [ ] Rich text editor
+  [ ] Category tagging
+  [ ] Mood tracking
+  [ ] AI analysis
+[ ] Goals Module
+  [ ] Goal hierarchy
+  [ ] Progress tracking
+  [ ] Milestone management
+[ ] Habits Module
+  [ ] Habit streaks
+  [ ] Reminders
+  [ ] Progress visualization
+[ ] Insights Module
+  [ ] AI-powered analysis
+  [ ] Progress reports
+  [ ] Recommendations
+
+Integration:
+[ ] OpenAI API integration
+[ ] Local storage setup
+[ ] Cloud sync (optional)
+[ ] Export functionality
+
+Testing:
+[ ] Unit tests setup
+[ ] Component tests
+[ ] Integration tests
+[ ] E2E tests
+
+Documentation:
+[ ] API documentation
+[ ] Component documentation
+[ ] User guide
+[ ] Developer guide
