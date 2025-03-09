@@ -27,4 +27,10 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    'glass',
+    'glass-card',
+    'glass-button',
+    'glass-input'
+  ]
 }; 
