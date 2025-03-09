@@ -35,11 +35,9 @@ Key Conventions
 - Use 'nuqs' for URL search parameter state management.
 - Optimize Web Vitals (LCP, CLS, FID).
 - Limit 'use client':
-- Favor server components and Next.js SSR.
-- Use only for Web API access in small components.
-- Avoid for data fetching or state management.
-
-Follow Next.js docs for Data Fetching, Rendering, and Routing.
+  - Favor server components and Next.js SSR.
+  - Use only for Web API access in small components.
+  - Avoid for data fetching or state management.
 
 ## Dependency Management (Updated as of March 2025)
 
@@ -72,6 +70,13 @@ Follow Next.js docs for Data Fetching, Rendering, and Routing.
 - **Configuration Files:**
   - Use JavaScript for configuration files (next.config.js, not next.config.ts) for better compatibility.
   - Avoid using experimental features in production environments.
+
+## Lessons Learned
+
+- For Next.js projects, always use JavaScript for configuration files (next.config.js, tailwind.config.js) instead of TypeScript for better compatibility.
+- When using Tailwind plugins, make sure to install all required dependencies like @tailwindcss/typography.
+- Avoid using border-border class in CSS as it's not a valid Tailwind class.
+- Resolve merge conflicts promptly to prevent build errors.
 
 Follow Next.js documentation for Data Fetching, Rendering, and Routing.
 
